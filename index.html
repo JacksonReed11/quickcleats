@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Quick Cleats — Convert Metal Spikes to Turf in Seconds</title>
-  <meta name="description" content="Quick Cleats — snap-on turf covers for metal baseball spikes. Switch surfaces, not shoes. $70."/>
+  <meta name="description" content="Quick Cleats — snap-on turf covers for metal baseball spikes. Switch surfaces, not shoes. $50."/>
   <link rel="icon" href="favicon.ico" />
   <style>
     :root{
@@ -150,7 +150,7 @@
         <span class="tag">Field-Ready • Game Legal on Turf</span>
         <div class="hero">
           <div class="hero-left">
-            <div class="price">$70 per pair</div>
+            <div class="price">$50 per pair</div>
             <div class="small">Ships worldwide • Bulk/team pricing available</div>
           </div>
         </div>
@@ -199,7 +199,7 @@
       <aside class="side">
         <div class="buy-card">
           <div class="tag" style="display:block;margin:0 auto 10px">Limited Intro Price</div>
-          <div class="price-big">$70</div>
+          <div class="price-big">$50</div>
           <div class="small">Per pair — includes one set of snap-locks & storage pouch</div>
 
           <div style="margin-top:14px">
@@ -245,7 +245,7 @@
   <div class="modal-backdrop" id="modal">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
       <button class="close-btn" id="closeModal" title="Close">✕</button>
-      <h3 id="modalTitle">Purchase Quick Cleats — $70</h3>
+      <h3 id="modalTitle">Purchase Quick Cleats — $50</h3>
       <div class="muted">Fill in your shipping details. This page is a demo checkout — replace with Stripe/Shopify/etc. for real payments.</div>
 
       <form id="purchaseForm" style="margin-top:10px">
@@ -260,7 +260,7 @@
           <textarea name="notes" placeholder="Notes (team colors / logo preference)" rows="2"></textarea>
 
           <div style="display:flex;gap:8px;align-items:center">
-            <button type="submit" class="btn">Place Order ($70)</button>
+            <button type="submit" class="btn">Place Order ($50)</button>
             <button type="button" class="btn secondary" id="cancel">Cancel</button>
           </div>
         </div>
@@ -299,9 +299,9 @@
       const address = data.get('address');
       const notes = data.get('notes');
 
-      const subject = encodeURIComponent('Quick Cleats Order — $70');
+      const subject = encodeURIComponent('Quick Cleats Order — $50');
       const body = encodeURIComponent(
-        `Order details:\n\nName: ${name}\nEmail: ${email}\nSize: ${size}\nQuantity: ${qty}\nAddress: ${address}\nNotes: ${notes}\n\nTotal: $${(70 * (parseInt(qty) || 1)).toFixed(2)}\n\n(This is a demo checkout. Replace with payment gateway integration.)`
+        `Order details:\n\nName: ${name}\nEmail: ${email}\nSize: ${size}\nQuantity: ${qty}\nAddress: ${address}\nNotes: ${notes}\n\nTotal: $${(50 * (parseInt(qty) || 1)).toFixed(2)}\n\n(This is a demo checkout. Replace with payment gateway integration.)`
       );
 
       // open an email client with the order details (temporary demo behavior)
